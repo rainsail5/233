@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全世界最可爱闪耀的女孩们</title>
+    <style>
+        body {
+            background-color: #ffe4e1; /* 低饱和度粉色背景 */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #main-image {
+            margin-top: 50px;
+        }
+
+       .option {
+            margin-top: 30px;
+            background-color: #ffb6c1; /* 粉色选项框 */
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="main-image" src="https://p9-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/000ca605d7b54d5ca4a172667d5420e5.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743352041&x-signature=aL93tPTuNbTdBPfTmf8P2DLJmzE%3D"
+         alt="合照">
+    <div class="option" id="sasa-option">飒飒</div>
+    <div class="option" id="gege-option">格格</div>
+    <div class="option" id="mumu-option">沐沐</div>
+    <div class="option" id="lili-option">礼礼</div>
+
+
+    <div id="popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 10px;">
+            <img id="popup-image" alt="">
+            <p id="popup-text"></p>
+        </div>
+    </div>
+document.getElementById('sasa-option').addEventListener('click', function () {
+    document.getElementById('popup-image').src = "https://p9-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/a6d7d1f9ddce418791b6366645046ca2.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743352041&x-signature=eythbJsLhg7D3hinVGmICxJbB1g%3D";
+    document.getElementById('popup-text').innerText = "飒飒：集美貌和才华于一身的律政俏佳人，我明媚又正义的大律师姐姐";
+    document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('gege-option').addEventListener('click', function () {
+    document.getElementById('popup-image').src = "https://p9-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/3638583b16f3425fb149561a754dc64b.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743352041&x-signature=caEQtGeQnAomND0MpU%2FKfFWkhME%3D";
+    document.getElementById('popup-text').innerText = "格格：有趣的灵魂与柔软的心脏，温柔美丽的外表与细腻的性格，任何人见到都会爱上她";
+    document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('mumu-option').addEventListener('click', function () {
+    document.getElementById('popup-image').src = "https://p9-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/e6567d00b1034405a5c63e85024eb254.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743352041&x-signature=hKx6tWxp3TUDJmw5zjahwLlp%2BQ8%3D";
+    document.getElementById('popup-text').innerText = "沐沐：似乎有无论何时都能运筹帷幄的能力，也有蹲下与小猫轻语的柔软，你应该会为她微微上扬的嘴角着迷";
+    document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('lili-option').addEventListener('click', function () {
+    document.getElementById('popup-image').src = "https://p9-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/12df8b60b4df4c8e9004c47780dad392.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743352041&x-signature=xZZXtmobBPwDegeTk74FbjLZ86I%3D";
+    document.getElementById('popup-text').innerText = "礼礼：被朋友们深爱着的小女孩，我想我会成为一名优秀的资深新闻工作者";
+    document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('popup').addEventListener('click', function () {
+    this.style.display = 'none';
+});
